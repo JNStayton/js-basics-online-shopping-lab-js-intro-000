@@ -40,14 +40,11 @@ function total() {
 }
 
 function removeFromCart(item) {
-  const itemName = []
-
+  var itemName = []
   for(var i = 0; i < cart.length; i++){
     itemName.push(cart[i].itemName)
     }
-
-  const index = itemName.indexOf(item)
-
+  var index = itemName.indexOf(item)
   if(index > -1){
      cart.splice(index, 1)
      return cart
