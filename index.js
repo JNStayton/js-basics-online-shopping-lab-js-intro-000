@@ -40,6 +40,8 @@ function total() {
 }
 
 function removeFromCart(item) {
+  delete cart[item];
+  return cart;
   // write your code here
 }
 
